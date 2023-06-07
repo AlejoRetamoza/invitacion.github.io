@@ -1,0 +1,78 @@
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: aliceblue;
+   
+    
+}
+
+header::before{
+    filter: blur(2px);
+    filter: grayscale(100%);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url(../static/imgHeader.jpg);
+    background-size: cover;
+    background-position-x:center ;
+}
+
+header .titles {
+    margin-top: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--first-color) ;
+    padding-block: 25px;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+header .titles .subtitle {
+    font-size: 1.2em;
+    text-align: center;
+    width: 70%;
+    font-weight: lighter ;
+    margin-top: 8%;
+    letter-spacing: 0.5em;  
+}
+
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50%;    
+}
+
+.counter div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.counter .number {
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.counter .desciption {
+    margin-top: 1em;
+    
+}

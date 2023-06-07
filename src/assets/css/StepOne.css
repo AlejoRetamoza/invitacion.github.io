@@ -1,0 +1,33 @@
+.civil-content {
+    background: url(../static/fondo.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.civil-content div {
+    text-align: center; 
+    margin: 1em;
+}
+
+
+.civil-content h2 {
+    color: var(--first-color);
+    margin-bottom: 5%;
+}
+
+.civil-content p {
+    color: rgb(209, 205, 194);
+}
+
+
+.civil-content button {
+    margin: 5%;
+}
+
+

@@ -1,0 +1,65 @@
+.step-three {
+ margin-top: 15%;
+}
+
+.step-three img {
+   width: 40%;
+}
+
+.step-three-music {
+    background: var(--first-color);
+    padding: 1em;
+    color: #ffff;
+    text-align: center;
+}
+
+.step-three-dresscode {
+    color: var(--first-color);
+    background: #ffff;
+    text-align: center;
+ 
+}
+
+
+.step-three-gift {
+    background: var(--first-color);
+    padding: 1em;
+    color: #ffff;
+    text-align: center;
+}
+.step-three-confirm {
+    color: var(--first-color);
+    background: #ffff;
+    padding: 1em;
+    background: url(../static/1.jpg) ;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.step-three-confirm p{
+    padding-top: 20%;
+}
+
+
+.step-three button {
+    margin-top: 1em;
+}
+
+.step-three p {
+    margin-top: 1em;
+    
+}
+
+
