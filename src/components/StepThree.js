@@ -11,6 +11,7 @@ export default function StepThree() {
   }
 
   const gotoGiftList = () => {
+    alert('Elegí que te gustaria regalarnos y borralo de la lista!')
     window.location.href = 'https://docs.google.com/spreadsheets/d/1HYgJ6NHI3-fwYaVHYbYXLdtzyMDCPUBgOJZYFNPlzkA/edit?usp=sharing'
   }
 
