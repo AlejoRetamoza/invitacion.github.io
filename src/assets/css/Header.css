@@ -28,7 +28,7 @@ header::before{
 }
 
 header .titles {
-    margin-top: 30%;
+    margin-top: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ header .titles .subtitle {
 .counter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 50%;    
+    margin-top: 8%;    
 }
 
 .counter div {
