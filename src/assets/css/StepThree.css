@@ -22,7 +22,7 @@
   
   .step-three-confirm {
     color: var(--first-color);
-    background: url(../static/1.jpg);
+    background: url(../static/1.jpg) white;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
     height: 40vh;
     justify-content: center;
     text-align: center;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     
