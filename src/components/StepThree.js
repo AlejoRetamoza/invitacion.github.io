@@ -6,10 +6,19 @@ export default function StepThree() {
 
   const safePath = require.context('../assets/static/', true);
 
-  const gotoPlayList = () => {
-    window.location.href = 'https://open.spotify.com/playlist/2sxWHQKtZoY2fT70i915mD?si=Lix8KrtgSuCLdzWSjYsneQ&utm_source=copy-link&nd=1'
-  }
+  const cvu = "0720043488000039263140";
 
+  const copyCVUToClipboard = () => {
+    const input = document.createElement("input");
+    input.value = cvu;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    document.body.removeChild(input);
+    alert(
+      "CVU copiado, ya podes pegar el cvu en tu cuenta para transferir dinero!"
+    );
+  };
   const gotoGiftList = () => {
     alert('Elegí que te gustaria regalarnos y borralo de la lista!')
     window.location.href = 'https://docs.google.com/spreadsheets/d/1HYgJ6NHI3-fwYaVHYbYXLdtzyMDCPUBgOJZYFNPlzkA/edit?usp=sharing'
@@ -24,29 +33,35 @@ export default function StepThree() {
   }
 
   return (
-    <div className='step-three'>
-      <div className='step-three-music'>
-        <img src={safePath('./musica.jpg')} alt="" />
-
-        <p>¿Qué canciones no pueden faltar?</p>
-        <button className='secondary-button' onClick={gotoPlayList}>Agregala a la playlist</button>
-      </div>
-      <div className='step-three-dresscode'>
-        <p>Dresscode:</p>
-        <h2>Formal/Elegante</h2>
-        <img src={safePath('./dress.jpg')} alt="" />
-      </div>
-      <div className='step-three-gift'>
-        <img src={safePath('./regalo.jpg')} alt="" />
-        <p>Si deseas hacernos un regalo</p>
-        <button className='secondary-button' onClick={gotoGiftList}>Ver lista</button>
-      </div>
-      <div className='step-three-confirm'>
-        <p>Gracias por acompañarnos en este momento tan especial
-            ¡Te esperamos!
-        </p>
-        <button className='primary-button' onClick={sendConfirm}>Confirmar invitación</button>
-      </div>
+    <div className="step-three">
+    <div className="card">
+      <img src={safePath("./dresscode.png")} alt="" />
+      <p>Dresscode:</p>
+      <h2>Elegante</h2>
     </div>
+    <div className="card">
+      <img src={safePath("./gift.png")} alt="" />
+      <p>Si deseas hacernos un regalo</p>
+      <button className="primary-button" onClick={gotoGiftList}>
+        Ver lista
+      </button>
+    </div>
+    <div className="card">
+    <img src={safePath("./cbu.png")} alt="" />
+      <h3>Si deseas colaborar con nuestra luna de miel</h3>
+      <p>Alias: camila.pedrucci</p>
+      <button className="primary-button" onClick={copyCVUToClipboard}>
+        Copiar CBU
+      </button>
+    </div>
+    <div className="step-three-confirm">
+      <p>
+        Gracias por acompañarnos en este momento tan especial 
+      </p>
+      <button className="primary-button" onClick={sendConfirm}>
+        Confirmar asistencia
+      </button>
+    </div>
+  </div>
   )
 }

@@ -42,8 +42,9 @@
 .img-2 {
     width: 45vw;
     height: 45vw;
-    background: url("../static/foto4.webp");
+    background: url("../static/foto4.jpg");
     background-size: cover;
+    background-position-y: 50%;
 }
 
 
@@ -53,6 +54,7 @@
     background: url("../static/foto5.jpg");
     background-size: cover;
     background-position-x:center ;
+    background-position-y: 60%;
 }
 
 
@@ -62,6 +64,7 @@
     background: url("../static/foto1.jpg");
     background-size: cover;
     background-position: 10% ;
+    background-position-y: 100%;
 }
 
 
@@ -71,13 +74,14 @@
     background: url("../static/foto2.jpg");
     background-size: cover;
     background-position-x:center ;
+    background-position-y: 60%;
 }
 
 
 .img-6 {
     width: 45vw;
     height: 45vw;
-    background: url("../static/foto6.jpg");
+    background: url("../static/foto6.jpeg");
     background-size: cover;
     background-position: 10%;
 }
