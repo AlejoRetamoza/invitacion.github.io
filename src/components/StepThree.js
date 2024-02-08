@@ -56,7 +56,8 @@ export default function StepThree() {
     </div>
     <div className="step-three-confirm">
       <p>
-        Gracias por acompañarnos en este momento tan especial 
+        Gracias por acompañarnos en este momento tan especial <br></br>
+        confirmar antes del 23/2
       </p>
       <button className="primary-button" onClick={sendConfirm}>
         Confirmar asistencia
