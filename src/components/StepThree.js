@@ -16,7 +16,7 @@ export default function StepThree() {
     document.execCommand("copy");
     document.body.removeChild(input);
     alert(
-      "CVU copiado, ya podes pegar el cvu en tu cuenta para transferir dinero!"
+      "Cbu copiado, ya podes pegar el cbu en tu cuenta para transferir dinero!"
     );
   };
   const gotoGiftList = () => {

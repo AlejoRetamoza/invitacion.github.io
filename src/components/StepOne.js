@@ -23,7 +23,7 @@ export default function StepOne() {
       <div>
         <h2>Ceremonia y fiesta</h2>
         <p>
-          Día 8 de marzo a las 22:00hs en el salón de eventos "La Paloma" N°4,
+          Día 8 de marzo a las 21:30hs en el salón de eventos "La Paloma" N°4,
           Berazategui.
         </p>
         <button className="primary-button" onClick={gotoParty}>
